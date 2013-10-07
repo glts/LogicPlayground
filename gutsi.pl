@@ -36,9 +36,9 @@ puzzle(He, Le, Br, St, Mo, Ma) :-
     diff(Le, Br, 0, He, Br, He),
     diff(St, Mo, Ma, St, Ma, St).
 
-% Br = 2
-% He = 6
-% Le = 3
-% Ma = 4
-% Mo = 8
-% St = 9
+% He = 6,
+% Le = 3,
+% Br = 2,
+% St = 9,
+% Mo = 8,
+% Ma = 4.
