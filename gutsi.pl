@@ -41,4 +41,4 @@ puzzle(He, Le, Br, St, Mo, Ma) :-
 % Br = 2,
 % St = 9,
 % Mo = 8,
-% Ma = 4.
+% Ma = 4 .
