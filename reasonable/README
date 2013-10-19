@@ -1,0 +1,16 @@
+To set up my working environment in Scheme, I used:
+-   Petite Chez Scheme, version 8.4
+-   "mk.scm" from http://kanren.cvs.sourceforge.net/kanren/kanren/mini/mk.scm
+-   "mkextraforms.scm" from
+    http://kanren.cvs.sourceforge.net/kanren/kanren/mini/mkextraforms.scm
+
+When starting to work it's important to load both miniKanren and the extra
+forms:
+
+    (load "mk.scm")
+    (load "mkextraforms.scm")
+
+See also
+-   http://minikanren.org/
+-   http://kanren.sourceforge.net/
+-   https://github.com/miniKanren/miniKanren
