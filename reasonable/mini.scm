@@ -1,4 +1,13 @@
-;; Friedman, Byrd, Kiselyov. 2005. The reasoned schemer.
+;; Code-along with Friedman/Byrd/Kiselyov, The reasoned schemer, 2005.
+
+;; Chapter 1
+
+(define teacupo
+  (lambda (x)
+    (conde
+      ((== 'tea x) succeed)
+      ((== 'cup x) succeed)
+      (else fail))))
 
 ;; Chapter 2
 
