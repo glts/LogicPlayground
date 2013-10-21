@@ -1,5 +1,8 @@
 ;; Code-along with Friedman/Byrd/Kiselyov, The reasoned Schemer, 2005.
 
+(load "mk.scm")
+(load "mkextraforms.scm")
+
 ;; Chapter 1
 
 ;; The Law of Fresh (p. 7)
@@ -68,3 +71,20 @@
 ;; To transform a function whose value is a Boolean into a function whose value
 ;; is a goal, replace cond with conde and unnest each question and answer.
 ;; Unnest the answer #t (or #f) by replacing it with #s (or #u).
+
+(define lolo
+  (lambda (l)
+    (conde
+      ((nullo l) succeed)
+      ((fresh (a)
+         (caro l a)
+         (listo a))
+       (fresh (d)
+         (cdro l d)
+         (lolo d)))
+      (else fail))))
+
+(define twinso
+  (lambda (l)
+    (fresh (x)
+      (== `(,x ,x) l))))
