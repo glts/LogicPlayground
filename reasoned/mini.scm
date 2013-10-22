@@ -88,3 +88,36 @@
   (lambda (l)
     (fresh (x)
       (== `(,x ,x) l))))
+
+(define listofo
+  (lambda (predo l)
+    (conde
+      ((nullo l) succeed)
+      ((fresh (a)
+         (caro l a)
+         (predo a))
+       (fresh (d)
+         (cdro l d)
+         (listofo predo d)))
+      (else fail))))
+
+(define loto
+  (lambda (l)
+    (listofo twinso l)))
+
+(define eq-caro
+  (lambda (l x)
+    (caro l x)))
+(define membero
+  (lambda (x l)
+    (conde
+      ((eq-caro l x) succeed)
+      (else
+        (fresh (d)
+          (cdro l d)
+          (membero x d))))))
+
+(define identity
+  (lambda (l)
+    (run* (x)
+      (membero x l))))
