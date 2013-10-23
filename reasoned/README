@@ -4,11 +4,7 @@ To set up my working environment in Scheme, I used:
 -   "mkextraforms.scm" from
     http://kanren.cvs.sourceforge.net/kanren/kanren/mini/mkextraforms.scm
 
-When starting to work it's important to load both miniKanren and the extra
-forms:
-
-    (load "mk.scm")
-    (load "mkextraforms.scm")
+The last two files are loaded at the top of my code-along record, "mini.scm".
 
 See also
 -   http://minikanren.org/
