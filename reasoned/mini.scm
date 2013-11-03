@@ -67,10 +67,10 @@
                    (listo d)))
       (else fail))))
 
-;; The First Commandment
-;; To transform a function whose value is a Boolean into a function whose value
-;; is a goal, replace cond with conde and unnest each question and answer.
-;; Unnest the answer #t (or #f) by replacing it with #s (or #u).
+;; The First Commandment (p. 28)
+;; To transform a function whose value is a Boolean into a function whose
+;; value is a goal, replace cond with conde and unnest each question and
+;; answer. Unnest the answer #t (or #f) by replacing it with #s (or #u).
 
 (define lolo
   (lambda (l)
